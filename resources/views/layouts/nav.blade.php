@@ -1,6 +1,6 @@
 <nav>
     <div class="logo">
-        {{config('app.name')}} <small class="city">Pakokku city</small>
+        {{config('app.name')}} <small class="city">Trusted movie reviews</small>
     </div>
     <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
         <svg width="20" height="20" aria-hidden="true">
@@ -41,12 +41,7 @@
                 <span>Years</span>
             </a>
         </li>
-        <li class="{{Route::is('copyorders.index')?'link-active':''}}">
-            <a href="{{route('copyorders.index')}}" >
-                <i class="fa fa-file"></i>
-                <span>Copy Orders</span>
-            </a>
-        </li>
+
         <li class="{{Route::is('users.index')?'link-active':''}}">
             <a href="{{route('users.index')}}" >
                 <i class="fa fa-user"></i>

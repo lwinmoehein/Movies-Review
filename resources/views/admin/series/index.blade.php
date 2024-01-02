@@ -11,9 +11,7 @@
 
                     <input type="text" name="queryString" value="{{old('queryString')??''}}" placeholder="Search by Code or Title">
                     <button type="submit" aria-label="submit form">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#search"></use>
-                        </svg>
+                        <i class="fa fa-search"></i>
                     </button>
                 </div>
             <button class="btn add-btn"><a href="{{route('serie.create')}}">Create New Serie<i class="ml-2 fa fa-plus"></i></a></button>

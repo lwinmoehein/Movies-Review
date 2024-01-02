@@ -65,7 +65,7 @@ label {
 .search-form {
     .search-box-wrapper {
         display: flex;
-        background-color: white;
+        background-color: $primary-color;
         padding: 0.2em;
         margin-right: 1em;
         font-size: small;
@@ -76,9 +76,15 @@ label {
         }
         input {
             flex: 8;
+            outline: none;
+            padding-left: 10px;
         }
         button {
             flex: 1;
+        }
+        i {
+            color: white;
+            font-weight: bolder;
         }
     }
 }

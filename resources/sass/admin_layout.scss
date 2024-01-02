@@ -253,34 +253,13 @@
     width: 100%;
     height: 50px;
     font-size: 1.5rem;
-    padding-left: 15px;
-    background: var(--page-content-blockColor);
-    color: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+      background: $primary-color;
   }
 
   .search-and-user ::placeholder {
     color: var(--page-content-txtColor);
   }
 
-  .search-and-user form svg {
-    width: 26px;
-    height: 26px;
-    fill: var(--page-content-txtColor);
-  }
-
-  .search-and-user form button {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-  }
-
-  .search-and-user .admin-profile {
-    display: flex;
-    align-items: center;
-  }
 
   .search-and-user .admin-profile .greeting {
     margin: 0 10px 0 20px;
@@ -295,20 +274,6 @@
     position: relative;
   }
 
-  .search-and-user .admin-profile .badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -10px;
-    right: -3px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    font-size: 10px;
-    color: var(--white);
-    background: var(--red);
-  }
 
   .page-content .grid {
     display: grid;
@@ -330,8 +295,6 @@
   }
 
 
-  /* MQ RULES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   @media screen and (max-width: 767px) {
     .page-header,
     .page-content {
@@ -465,10 +428,6 @@
       width: calc(100% - 40px);
     }
   }
-
-
-  /* SWITCH STYLES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .switch label {
     display: grid;
     grid-template-columns: auto auto;

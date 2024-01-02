@@ -54,10 +54,10 @@ Route::resource('/series','User\SeriesController');
 Route::resource('/movies','User\MoviesController');
 Route::post('/movies/addcopylist','User\MoviesController@addCopyList')->name('movies.addToCopyList');
 Route::post('/series/addcopylist','User\SeriesController@addCopyList')->name('series.addToCopyList');
-Route::get('copyitems/{copyitem}/destroy','User\CopyListController@destroy')->name('users.copyitems.destroy');
-Route::get('copyitems/movies/{movie}/destroy','User\CopyListController@movieCopyDestroy')->name('users.movies.copyitems.destroy');
-Route::get('copyitems/series/{serie}/destroy','User\CopyListController@serieCopyDestroy')->name('users.series.copyitems.destroy');
+Route::get('bookmarks/{copyitem}/destroy','User\CopyListController@destroy')->name('users.copyitems.destroy');
+Route::get('bookmarks/movies/{movie}/destroy','User\CopyListController@movieCopyDestroy')->name('users.movies.copyitems.destroy');
+Route::get('bookmarks/series/{serie}/destroy','User\CopyListController@serieCopyDestroy')->name('users.series.copyitems.destroy');
 
-Route::get('copyitems/confirm','User\CopyListController@confirmOrder')->name('users.copyitems.confirm');
-Route::get('cart','User\CopyListController@cart')->name('cart');
+Route::get('bookmarks/confirm','User\CopyListController@confirmOrder')->name('users.copyitems.confirm');
+Route::get('bookmarks','User\CopyListController@cart')->name('cart');
 

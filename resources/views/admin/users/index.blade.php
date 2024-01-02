@@ -8,8 +8,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Role</th>
-            <th>Created At</th>
-            <th>No of purchased items</th>
+            <th>Account Created At</th>
         </thead>
        @foreach ($users as $user)
             <tr>
@@ -17,11 +16,13 @@
                 <td>{{$user->email}}</td>
                 <td>
                     @foreach ($user->roles as $role)
-                        {{$role->name}},
+                        {{$role->name}}
+                        @if(!$loop->last)
+                            ,
+                        @endif
                     @endforeach
                 </td>
                 <td>{{$user->created_at}}</td>
-                <td>{{$user->purchased_copy_items_count}}</td>
             </tr>
        @endforeach
     </table>

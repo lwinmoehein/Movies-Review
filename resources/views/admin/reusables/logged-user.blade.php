@@ -1,12 +1,13 @@
 <section class="search-and-user">
         <div class="dropdown">
+
         <form id="logout-form" action="{{ route('logout') }}" method="POST">
             @csrf
-
         </form>
 
         <button onclick="openUserMenu()" class="user-menu">
-            Logged in as:  {{auth()->user()->name}}
+            <i class="fa fa-user"></i>
+            <span>{{auth()->user()->name}}</span>
          </button>
             <div id="user-menu-dropdown" class="dropdown-content">
                     <button type="submit" onclick="logOut()" value="LogOut">Log Out</button>

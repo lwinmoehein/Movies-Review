@@ -17,7 +17,6 @@
                     </button>
                 </div>
             <button class="btn add-btn"><a href="{{route('serie.create')}}">Create New Serie<i class="ml-2 fa fa-plus"></i></a></button>
-            <div class="space"></div>
         </section>
     <section>
         @include('admin.reusables.filters',['years'=>$years,'countries'=>$countries,'categories'=>$categories])

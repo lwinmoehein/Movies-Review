@@ -14007,7 +14007,6 @@ a.text-dark:focus {
 .tag-add-section {
   display: flex;
   justify-content: flex-end;
-  margin-right: 8em;
 }
 
 .input-form .input-wrapper {
@@ -15082,6 +15081,7 @@ label {
   background-color: red;
   color: white;
   padding: 0.3em;
+  text-decoration: none !important;
 }
 
 .movie {
@@ -15309,7 +15309,6 @@ body {
   left: var(--page-header-width);
   width: calc(100% - var(--page-header-width));
   min-height: 100vh;
-  padding: 30px;
   color: var(--page-content-txtColor);
   background: var(--page-content-bgColor);
 }
@@ -15317,7 +15316,14 @@ body {
 .search-and-user {
   display: flex;
   justify-content: flex-end;
-  padding-right: 2em;
+  background-color: darkblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search-and-user .user-menu {
+  color: white !important;
+  font-weight: bold;
 }
 
 .search-and-user form {

@@ -229,15 +229,20 @@
     left: var(--page-header-width);
     width: calc(100% - var(--page-header-width));
     min-height: 100vh;
-    padding: 30px;
     color: var(--page-content-txtColor);
     background: var(--page-content-bgColor);
   }
 
   .search-and-user {
-     display: flex;
-     justify-content: flex-end;
-     padding-right: 2em;
+      display: flex;
+      justify-content: flex-end;
+      background-color: $primary-color;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .search-and-user .user-menu{
+      color: white !important;
+      font-weight: bold;
   }
 
   .search-and-user form {
